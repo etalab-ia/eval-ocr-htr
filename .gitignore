@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+
+# Tooling and caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Benchmark data: keep directory structure, not data artifacts
+/data/documents/**
+!/data/documents/.gitkeep
+/data/ground_truth/**
+!/data/ground_truth/.gitkeep
+/data/outputs/**
+!/data/outputs/.gitkeep
+/data/manifest.csv
+
+# Agent VM / local tooling (never versioned)
+.agent-vm.runtime.sh
+.albert-code/
+opencode.json
+AGENTS.md
+tasks/
+_import/
